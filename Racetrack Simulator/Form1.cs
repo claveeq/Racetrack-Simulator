@@ -87,6 +87,7 @@ namespace Racetrack_Simulator
         private void button2_Click(object sender, EventArgs e)
         {
             timer1.Enabled = true;
+            panel1.Enabled = false;
          
         }
 
@@ -105,6 +106,7 @@ namespace Racetrack_Simulator
                     for (int y = 0; y < 3; y++)
                     {
                         GuyArray[y].Collect(i);
+                        panel1.Enabled = true;
                         GuyArray[y].UpdateLabels();
             
                     }             
